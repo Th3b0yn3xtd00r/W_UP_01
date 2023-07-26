@@ -60,7 +60,7 @@ The positions have a significant difference.
 favstats(pushups~position,data=mydata)
 ```
 
-
+Based off the numerical results between Line and Skill players shows a significant difference. The mean for the Line players is seventeen push ups while the Skill players are able to do fifty push ups within two minutes.
 
 ## Inferential Results
 
