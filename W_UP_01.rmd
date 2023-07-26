@@ -33,6 +33,8 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+The response variable we are using is Numerical~Categorical. The number of push-ups is numerical while the categorical is the different positions (Line players and Skill players). Other methods we will be using is the box plot and we are utilizing the numerical summary and numerical descriptive results and t-test.
+
 # Results
 
 <!--Divide this section into two sub-sections: One for your descriptive results and one for your inferential results.!-->
@@ -43,13 +45,30 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+boxplot(pushups~position,data=mydata)
+```
+
+The box plot show that the skill players on average do about sixty push ups while the line players are able to do less than twenty push ups in about two minutes.
+The positions have a significant difference.
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+favstats(pushups~position,data=mydata)
+```
+
+
+
 ## Inferential Results
 
 <!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+```{r}
+t.test(momheight~Sex,data=ucdavis1)
+```
 
 
 # Discussion and Conclusion
